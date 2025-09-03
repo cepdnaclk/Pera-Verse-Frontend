@@ -1,0 +1,38 @@
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #f9fafb;
+}
+
+/* Sidebar takes fixed width */
+.dashboard-layout .sidebar {
+  flex-shrink: 0;
+  width: 260px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+/* Main area grows */
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header always at top */
+.dashboard-main header {
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+/* Content scrollable */
+.dashboard-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
