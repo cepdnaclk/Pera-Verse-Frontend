@@ -21,6 +21,7 @@ import SearchBar from "../../components/HeatMapAnalysis/searchBar";
 // If you use BuildingBarChart, update its import as well:
 import BuildingBarChart from "../../components/HeatMapAnalysis/BuildingBarChart";
 
+// Utility components for loading and error states
 import { LoadingView, ErrorView } from "../../utils/uiHelpers"; // your helpers
 
 const CrowdManagement = () => {
