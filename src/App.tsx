@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import Dashboard from './pages/Dashboard';
-import CrowdManagement from './pages/CrowdManagement';
+import HeatMapAnalysis from './pages/HeatMap/HeatMapAnalysis';
 import EventSchedule from './pages/EventSchedule';
 import Information from './pages/Information';
 import NotFound from './pages/NotFound';
@@ -23,7 +23,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/crowd-management" element={<CrowdManagement />} />
+            <Route path="/crowd-management" element={<HeatMapAnalysis />} />
             <Route path="/events" element={<EventSchedule />} />
             <Route path="/information" element={<Information />} />
             <Route path="*" element={<NotFound />} />
